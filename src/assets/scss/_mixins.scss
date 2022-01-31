@@ -1,0 +1,27 @@
+@mixin elevation-1 {
+  box-shadow: 0px 2px 4px rgba(50, 50, 93, 0.1);
+}
+
+@mixin elevation-2 {
+  box-shadow: 0px 2px 10px rgba(50, 50, 93, 0.1),
+    0px 1px 3px -1px rgba(0, 0, 0, 0.05);
+}
+
+@mixin subtitle-text {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: 1.15%;
+}
+
+@mixin body-leading {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 1.15%;
+}
+
+@mixin body-text {
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  letter-spacing: 1.15%;
+}
