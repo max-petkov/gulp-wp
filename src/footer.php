@@ -1,7 +1,9 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__logo">
-            <img src="<?php echo get_template_directory_uri();?>/assets/images/logo.png" alt="mcc-climatisation-logo">
+            <a href="#">
+                <img src="<?php echo get_template_directory_uri();?>/assets/images/logo.png" alt="mcc-climatisation-logo">
+            </a>
             <div class="footer__icons">
                 <a href="mailto:monchoixclimat@gmail.com">
                     <img src="<?php echo get_template_directory_uri();?>/assets/images/email.png" alt="mcc-phone-call">
