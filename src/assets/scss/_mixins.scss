@@ -1,10 +1,7 @@
-@mixin elevation-1 {
-  box-shadow: 0px 2px 4px rgba(50, 50, 93, 0.1);
-}
-
-@mixin elevation-2 {
-  box-shadow: 0px 2px 10px rgba(50, 50, 93, 0.1),
-    0px 1px 3px -1px rgba(0, 0, 0, 0.05);
+@mixin h4 {
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
 }
 
 @mixin subtitle-text {
@@ -24,4 +21,20 @@
   font-size: 1.6rem;
   line-height: 2.2rem;
   letter-spacing: 1.15%;
+}
+
+@mixin elevation-1 {
+  box-shadow: 0px 2px 4px rgba(50, 50, 93, 0.1);
+}
+
+@mixin elevation-2 {
+  box-shadow: 0px 2px 10px rgba(50, 50, 93, 0.1),
+    0px 1px 3px -1px rgba(0, 0, 0, 0.05);
+}
+
+@mixin hover-icon {
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: 0.2s ease-in;
 }

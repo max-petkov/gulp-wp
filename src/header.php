@@ -10,7 +10,7 @@
 <body>
     <nav class="nav">
         <div class="nav__logo">
-            <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/01/logo.png" alt="mcc-climatisation-logo">
+            <img src="<?php echo get_template_directory_uri();?>/assets/images/logo.png" alt="mcc-climatisation-logo">
         </div>
         <?php wp_nav_menu(array("theme_location" => "headerNavigation")); ?>
         <a class="nav__cta" href="tel:514 574-5181">
