@@ -13,7 +13,11 @@
                 </a>
             </div>
         </div>
-        <?php wp_nav_menu(array("theme_location" => "footerNavigation", "container" => "ul", "menu_class" => "footer__nav-list"));?>
+        <?php wp_nav_menu(array(
+            "theme_location" => "footerNavigation",
+            "container" => "ul",
+            "menu_class" => "footer__nav-list"
+          ));?>
     </div>
 </footer>
 <?php wp_footer();?>

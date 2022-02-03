@@ -32,7 +32,7 @@
         width: 2.6rem;
       }
       &:hover {
-        background-color: rgba($color-primary, 0.08);
+        background-color: darken(#f7f1e9, 6%);
       }
     }
     a:last-child {
@@ -44,7 +44,7 @@
         width: 2.2rem;
       }
       &:hover {
-        background-color: rgba($color-primary, 0.08);
+        background-color: darken(#f7f1e9, 6%);
       }
     }
   }
