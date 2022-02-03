@@ -30,6 +30,13 @@ h1 {
   font-weight: bold;
   font-size: 7.2rem;
   line-height: 8rem;
+
+  @include media-view($tablet) {
+    & {
+      font-size: 3.6rem;
+      line-height: 4.2rem;
+    }
+  }
 }
 
 h2 {
@@ -37,6 +44,13 @@ h2 {
   font-size: 4.8rem;
   line-height: 5.6rem;
   letter-spacing: -3%;
+
+  @include media-view($tablet) {
+    & {
+      font-size: 3.2rem;
+    line-height: 3.8rem;
+    }
+  }
 }
 
 h3 {
@@ -44,6 +58,13 @@ h3 {
   font-size: 3.2rem;
   line-height: 3.6rem;
   letter-spacing: -2%;
+
+  @include media-view($tablet) {
+    & {
+      font-size: 2.8rem;
+      line-height: 3.4rem;
+    }
+  }
 }
 
 h4 {
@@ -55,6 +76,13 @@ h5 {
   font-size: 2.4rem;
   line-height: 2.8rem;
   letter-spacing: -1%;
+
+  @include media-view($tablet) {
+    & {
+      font-size: 1.8rem;
+    line-height: 2.4rem;
+    }
+  }
 }
 
 h6 {
@@ -62,6 +90,14 @@ h6 {
   font-size: 2.2rem;
   line-height: 2.6rem;
   letter-spacing: -1%;
+
+  @include media-view($tablet) {
+    & {
+      font-size: 1.6rem;
+    line-height: 2.2rem;
+    }
+  }
+  
 }
 
 .subtitle {
