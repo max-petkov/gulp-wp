@@ -16,6 +16,10 @@ body {
   color: $color-text-dark;
 }
 
+body > div {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 118.4rem;
   margin: 0 auto;
