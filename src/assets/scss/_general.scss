@@ -12,10 +12,9 @@ html {
 
 body {
   background-color: $color-secondary-light;
-  font-family: Nunito;
+  font-family: Nunito, sans-serif;
   color: $color-text-dark;
 }
-
 body > div {
   overflow-x: hidden;
 }
@@ -48,7 +47,7 @@ h2 {
   @include media-view($tablet) {
     & {
       font-size: 3.2rem;
-    line-height: 3.8rem;
+      line-height: 3.8rem;
     }
   }
 }
@@ -80,7 +79,7 @@ h5 {
   @include media-view($tablet) {
     & {
       font-size: 1.8rem;
-    line-height: 2.4rem;
+      line-height: 2.4rem;
     }
   }
 }
@@ -94,10 +93,9 @@ h6 {
   @include media-view($tablet) {
     & {
       font-size: 1.6rem;
-    line-height: 2.2rem;
+      line-height: 2.2rem;
     }
   }
-  
 }
 
 .subtitle {
