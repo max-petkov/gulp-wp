@@ -3,6 +3,7 @@ const sass = require("gulp-sass")(require("sass"));
 const autoprefixer = require("autoprefixer");
 const postcss = require("gulp-postcss");
 const cssnano = require("cssnano");
+const purgecss = require("gulp-purgecss");
 const imagemin = require("gulp-imagemin");
 const uglify = require("gulp-uglify");
 const browsersync = require("browser-sync").create();
@@ -20,45 +21,60 @@ gulp.task("php", function () {
 const css = {
   src: "src/assets/scss/main.scss",
   watch: "src/assets/scss/**/*",
-  build: "../custom_wordpress/wp-content/themes/mccclimatisation/assets/css",
+  dist: "../custom_wordpress/wp-content/themes/mccclimatisation/assets/css",
 };
 gulp.task("css", function () {
   return gulp
     .src(css.src)
     .pipe(sass())
+    .pipe(
+      purgecss({
+        content: ["src/*.php"],
+        safelist: [
+          "nav-m-opened",
+          "a",
+          "li",
+          "img",
+          "li:last-child",
+          "sub-menu",
+          "fonts-loaded",
+        ],
+      })
+    )
     .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(gulp.dest(css.build));
+    .pipe(gulp.dest(css.dist));
 });
 
 // Creating Font task
 const fonts = {
   src: "src/assets/fonts/*.ttf",
-  build: "../custom_wordpress/wp-content/themes/mccclimatisation/assets/fonts",
+  dist: "../custom_wordpress/wp-content/themes/mccclimatisation/assets/fonts",
 };
 gulp.task("fonts", function () {
-  return gulp.src(fonts.src).pipe(gulp.dest(fonts.build));
+  return gulp.src(fonts.src).pipe(gulp.dest(fonts.dist));
 });
 
 // Creating Image task
 const images = {
   src: "src/assets/images/*",
-  build: "../custom_wordpress/wp-content/themes/mccclimatisation/assets/images",
+  dist: "../custom_wordpress/wp-content/themes/mccclimatisation/assets/images",
 };
 gulp.task("images", function () {
-  return gulp.src(images.src).pipe(imagemin()).pipe(gulp.dest(images.build));
+  return gulp.src(images.src).pipe(imagemin()).pipe(gulp.dest(images.dist));
 });
 
 // Creating JS task
 const js = {
   src: "src/assets/js/main.js",
-  build: "../custom_wordpress/wp-content/themes/mccclimatisation/assets/js",
+  dist: "../custom_wordpress/wp-content/themes/mccclimatisation/assets/js",
 };
 gulp.task("js", function () {
-  return gulp.src(js.src).pipe(uglify()).pipe(gulp.dest(js.build));
+  return gulp.src(js.src).pipe(uglify()).pipe(gulp.dest(js.dist));
 });
 
 gulp.task("build", gulp.series("php", "css", "fonts", "images", "js"));
 
+// Creating Watch task + Browserync
 gulp.task("watch", function () {
   browsersync.init({
     proxy: "localhost/custom_wordpress",
