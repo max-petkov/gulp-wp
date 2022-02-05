@@ -17,9 +17,24 @@
         <div class="hero-slider">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide">Slide 01</li>
-                    <li class="splide__slide">Slide 02</li>
-                    <li class="splide__slide">Slide 03</li>
+                    <li class="splide__slide hero__slide" data-splide-interval="4000">
+                        <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/comfortmaker-logo.png"
+                            alt="comfortmaker-mcc">
+                        <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/hero-comfortmaker.png"
+                            alt="comfortmaker-mcc">
+                    </li>
+                    <li class="splide__slide hero__slide" data-splide-interval="4000">
+                        <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/rheem-logo.png"
+                            alt="comfortmaker-mcc">
+                        <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/hero-rheem.png"
+                            alt="rheem-mcc">
+                    </li>
+                    <li class="splide__slide hero__slide" data-splide-interval="4000">
+                        <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/coleman-logo.png"
+                            alt="comfortmaker-mcc">
+                        <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/hero-coleman.png"
+                            alt="comfortmaker-mcc">
+                    </li>
                 </ul>
             </div>
 

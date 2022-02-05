@@ -25,7 +25,11 @@ function closeMenu(ul, cta) {
 
 function heroSlider() {
   const heroSlide = new Splide(".hero-slider", {
-    autoWidth: true,
+    arrows: false,
+    gap: "2.4rem",
+    autoplay: true,
+    rewind: true,
+    rewindSpeed: 1000,
   });
   heroSlide.mount();
 }
