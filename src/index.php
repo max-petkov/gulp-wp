@@ -455,4 +455,30 @@
         </div>
     </div>
 </section>
+<section class="promotions">
+    <div class="container promotions-container">
+        <div class="section__title">
+            <p class="body-leading-regular">promotions</p>
+            <h2>HVAC <span>Promotions</span></h2>
+        </div>
+        <div>
+            <div class="promotion">
+                <p><span>-</span><span>45</span><span>%</span><span>off</span></p>
+                <p>clearance</p>
+            </div>
+            <div class="promotion">
+                <p><span>-</span><span>35</span><span>%</span><span>off</span></p>
+                <p>HEAT PUMPS</p>
+            </div>
+            <div class="promotion">
+                <p><span>-</span><span>30</span><span>%</span><span>off</span></p>
+                <p>FURNACES</p>
+            </div>
+            <div class="promotion">
+                <p><span>-</span><span>25</span><span>%</span><span>off</span></p>
+                <p>AIR CONDITIONERS</p>
+            </div>
+        </div>
+    </div>
+</section>
 <?php get_footer(); ?>

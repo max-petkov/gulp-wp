@@ -77,6 +77,10 @@
     .solution {
       flex-direction: column;
 
+      p {
+        font-size: 1.8rem !important;
+      }
+
       &--residential {
         margin-bottom: 3.2rem;
       }

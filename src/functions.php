@@ -22,7 +22,17 @@ function post_types_mcc() {
         ),
         "menu_icon" => "dashicons-cover-image",
         "supports" => array("title", "page-attributes"),
-        ));
+    ));
+    register_post_type("testimonial", array(
+        "public" => true,
+        "labels" => array(
+            "name" => "Testimonials",
+            "add_new_item" => "New Testimonial",
+            "edit_item" => "Edit Testimonial"
+        ),
+        "menu_icon" => "dashicons-testimonial",
+        "supports" => array("title")
+    ));
 }
 
 add_action("init", "post_types_mcc");
