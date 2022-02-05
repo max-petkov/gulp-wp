@@ -11,3 +11,18 @@ function navigations_mcc() {
 }
 
 add_action("after_setup_theme", "navigations_mcc");
+
+function post_types_mcc() {
+    register_post_type( "hero-slider", array(
+        "public" => true, 
+        "labels" => array(
+            "name" => "Hero Slider",
+            "add_new_item" => "Add Slide",
+            "edit_item" => "Edit Slide"
+        ),
+        "menu_icon" => "dashicons-cover-image",
+        "supports" => array("title", "page-attributes"),
+        ));
+}
+
+add_action("init", "post_types_mcc");
