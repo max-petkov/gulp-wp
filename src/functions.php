@@ -17,7 +17,7 @@ function post_types_mcc() {
         "public" => true, 
         "labels" => array(
             "name" => "Hero Slider",
-            "add_new_item" => "Add Slide",
+            "add_new_item" => "New Slide",
             "edit_item" => "Edit Slide"
         ),
         "menu_icon" => "dashicons-cover-image",

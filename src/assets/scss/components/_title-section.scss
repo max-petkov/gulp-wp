@@ -1,0 +1,20 @@
+.section__title {
+  text-align: center;
+  margin-bottom: 6.4rem;
+  p {
+    color: rgba($color-text-dark, 0.7);
+  }
+
+  h2 {
+    color: rgba($color-text-dark, 0.8);
+    span {
+      color: rgba($color-text-dark, 1);
+    }
+  }
+
+  @include media-view($tablet) {
+    & {
+      margin-bottom: 3.2rem;
+    }
+  }
+}
