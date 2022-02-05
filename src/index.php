@@ -17,24 +17,18 @@
         <div class="hero-slider">
             <div class="splide__track">
                 <ul class="splide__list">
+                    <?php  
+                    $heroSlider = new WP_Query(array(
+                        "post_type" => "hero-slider",
+                        "orderby" => "menu_order",
+                        "order" => "ASC"
+                    ));
+                    while($heroSlider->have_posts()): $heroSlider->the_post();?>
                     <li class="splide__slide hero__slide" data-splide-interval="4000">
-                        <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/comfortmaker-logo.png"
-                            alt="comfortmaker-mcc">
-                        <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/hero-comfortmaker.png"
-                            alt="comfortmaker-mcc">
+                        <img src="<?php the_field('insert_logo') ?>">
+                        <img src="<?php the_field('insert_image') ?>">
                     </li>
-                    <li class="splide__slide hero__slide" data-splide-interval="4000">
-                        <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/rheem-logo.png"
-                            alt="comfortmaker-mcc">
-                        <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/hero-rheem.png"
-                            alt="rheem-mcc">
-                    </li>
-                    <li class="splide__slide hero__slide" data-splide-interval="4000">
-                        <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/coleman-logo.png"
-                            alt="comfortmaker-mcc">
-                        <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/hero-coleman.png"
-                            alt="comfortmaker-mcc">
-                    </li>
+                    <?php endwhile;?>
                 </ul>
             </div>
 
