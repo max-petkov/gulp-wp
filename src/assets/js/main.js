@@ -23,5 +23,13 @@ function closeMenu(ul, cta) {
   };
 }
 
+function heroSlider() {
+  const heroSlide = new Splide(".hero-slider", {
+    autoWidth: true,
+  });
+  heroSlide.mount();
+}
+
 navMenu.addEventListener("click", openMenu(navLinks, navCTA));
 body.addEventListener("click", closeMenu(navLinks, navCTA));
+document.addEventListener("DOMContentLoaded", heroSlider);

@@ -15,7 +15,14 @@
             <button class="btn btn-primary-outline">hvac solutions</button>
         </div>
         <div class="hero-slider">
-            <h1>SLIDER HERE</h1>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">Slide 01</li>
+                    <li class="splide__slide">Slide 02</li>
+                    <li class="splide__slide">Slide 03</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </section>

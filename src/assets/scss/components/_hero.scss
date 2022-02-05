@@ -31,12 +31,10 @@
     width: 100%;
     height: 43.9rem;
     max-width: 38.1rem;
-    text-align: center;
-    color: #ccc;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    @include elevation-2;
+
+    .splide__slide {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
