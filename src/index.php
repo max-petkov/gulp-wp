@@ -481,4 +481,39 @@
         </div>
     </div>
 </section>
+<section class="brands">
+    <div class="section__title">
+        <p class="body-leading-regular">brands</p>
+        <h2>Brands we <span>Trust</span></h2>
+    </div>
+    <div class="container brands-container">
+        <div class="brand">
+            <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/gree-logo.png" alt="" height="32px">
+        </div>
+        <div class="brand">
+            <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/york-logo.png" alt="" height="51px">
+        </div>
+        <div class="brand">
+            <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/lg-logo.png" alt="" height="49px">
+        </div>
+        <div class="brand">
+            <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/rheem-logo.png" alt="" height="64px">
+        </div>
+        <div class="brand">
+            <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/goodman-logo.png" alt=""
+                height="48px">
+        </div>
+        <div class="brand">
+            <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/comfortmaker-logo.png" alt=""
+                height="32px">
+        </div>
+        <div class="brand">
+            <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/coleman-logo.png" alt=""
+                height="40px">
+        </div>
+        <div class="brand">
+            <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/elios-logo.png" alt="" height="32px">
+        </div>
+    </div>
+</section>
 <?php get_footer(); ?>
