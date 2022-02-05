@@ -129,7 +129,20 @@ a {
   @include body-text;
 }
 
-// Lists
 ul {
   list-style-type: none;
+}
+
+section:not(.hero) {
+  padding: 12rem 4rem;
+
+  @include media-view($laptop) {
+    padding: 8rem 4rem;
+  }
+  @include media-view($tablet) {
+    padding: 6.4rem 2.4rem;
+  }
+  @include media-view($mobile) {
+    padding: 4rem 2.4rem;
+  }
 }
