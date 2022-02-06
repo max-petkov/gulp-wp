@@ -7,11 +7,11 @@
                 </a>
                 <div class="footer__icons">
                     <a href="mailto:monchoixclimat@gmail.com">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/images/email.png"
+                        <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/email.png"
                             alt="mcc-phone-call">
                     </a>
                     <a href="tel:514 574-5181">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/images/phone-call.png"
+                        <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/phone-message.png"
                             alt="mcc-phone-call">
                     </a>
                 </div>

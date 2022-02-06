@@ -1,0 +1,64 @@
+.why-choose-us {
+  &-container {
+    display: grid;
+    grid-template-columns: 40rem 40rem;
+    justify-content: center;
+    column-gap: 8rem;
+    row-gap: 4.8rem;
+    position: relative;
+
+    @include media-view($laptop) {
+      grid-template-columns: 40vw 40vw;
+    }
+    @include media-view($tablet) {
+      grid-template-columns: 80vw;
+      row-gap: 3.2rem;
+    }
+
+    .decoration-1 {
+      position: absolute;
+      top: -16rem;
+      left: 12rem;
+    }
+
+    .decoration-2 {
+      position: absolute;
+      bottom: -6rem;
+      right: 3rem;
+    }
+
+    @include media-view($laptop) {
+      .decoration-1 {
+        left: 8rem;
+      }
+    }
+    @include media-view($tablet) {
+      .decoration-1,
+      .decoration-2 {
+        display: none;
+      }
+    }
+
+    svg {
+      width: 8rem;
+    }
+  }
+
+  &-card {
+    display: flex;
+
+    .why-choose-us-icon {
+      margin-right: 1.6rem;
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+
+    p:first-child {
+      margin-bottom: 0.8rem;
+    }
+
+    p:last-child {
+      font-size: 1.8rem;
+    }
+  }
+}

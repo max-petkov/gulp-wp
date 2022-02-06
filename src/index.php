@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <section class="hero">
     <div class="hero-container container">
         <div class="hero-banner">
@@ -834,6 +833,98 @@
                     d="M124 176C126.209 176 128 174.209 128 172C128 169.791 126.209 168 124 168C121.791 168 120 169.791 120 172C120 174.209 121.791 176 124 176Z"
                     fill="#639BEF" />
             </svg>
+        </div>
+    </div>
+</section>
+<section class="why-choose-us">
+    <div class="section__title">
+        <h2><span>Why choose us?</span></h2>
+    </div>
+    <div class="container why-choose-us-container">
+        <div class="why-choose-us-card">
+            <img class="why-choose-us-icon"
+                src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/quick-response.png" alt="">
+            <div>
+                <p class="body-leading">Fast Response</p>
+                <p class="body-leading-regular">We are here for you need us - we are committed and meet your deadlines
+                </p>
+            </div>
+        </div>
+        <div class="why-choose-us-card">
+            <img class="why-choose-us-icon"
+                src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/brand-identity.png" alt="">
+            <div>
+                <p class="body-leading">Variety of Products</p>
+                <p class="body-leading-regular">We offer wide variety of products to meet the specific need of our
+                    customers
+                </p>
+            </div>
+        </div>
+        <div class="why-choose-us-card">
+            <img class="why-choose-us-icon"
+                src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/quality-assurance.png" alt="">
+            <div>
+                <p class="body-leading">Quality Services</p>
+                <p class="body-leading-regular">Customers satisfaction is at the heart of everything we do - we strive
+                    to provide the highest quality of service to our customers
+                </p>
+            </div>
+        </div>
+        <div class="why-choose-us-card">
+            <img class="why-choose-us-icon"
+                src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/3d-model.png" alt="">
+            <div>
+                <p class="body-leading">Attention to Details</p>
+                <p class="body-leading-regular">We adapt out solutions melticously to meet every detail of our customers
+                    requests
+                </p>
+            </div>
+        </div>
+        <div class="decoration-1">
+            <svg width="105" height="59" viewBox="0 0 105 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M69.0968 25H67.2635C64.7322 25 62.6802 27.0147 62.6802 29.5C62.6802 31.9853 64.7322 34 67.2635 34H69.0968C71.6281 34 73.6802 31.9853 73.6802 29.5C73.6802 27.0147 71.6281 25 69.0968 25Z"
+                    fill="#EF6D63" />
+                <path
+                    d="M53.6061 25H4.39394C1.96723 25 0 27.0147 0 29.5C0 31.9853 1.96723 34 4.39394 34H53.6061C56.0328 34 58 31.9853 58 29.5C58 27.0147 56.0328 25 53.6061 25Z"
+                    fill="#EF6D63" />
+                <path
+                    d="M100.097 50H98.2635C95.7322 50 93.6802 52.0147 93.6802 54.5C93.6802 56.9853 95.7322 59 98.2635 59H100.097C102.628 59 104.68 56.9853 104.68 54.5C104.68 52.0147 102.628 50 100.097 50Z"
+                    fill="#FED4BD" />
+                <path
+                    d="M84.6061 50H35.3939C32.9672 50 31 52.0147 31 54.5C31 56.9853 32.9672 59 35.3939 59H84.6061C87.0328 59 89 56.9853 89 54.5C89 52.0147 87.0328 50 84.6061 50Z"
+                    fill="#FED4BD" />
+                <path
+                    d="M89.0968 0H87.2635C84.7322 0 82.6802 2.01472 82.6802 4.5C82.6802 6.98528 84.7322 9 87.2635 9H89.0968C91.6281 9 93.6802 6.98528 93.6802 4.5C93.6802 2.01472 91.6281 0 89.0968 0Z"
+                    fill="#FED4BD" />
+                <path
+                    d="M73.6061 0H24.3939C21.9672 0 20 2.01472 20 4.5C20 6.98528 21.9672 9 24.3939 9H73.6061C76.0328 9 78 6.98528 78 4.5C78 2.01472 76.0328 0 73.6061 0Z"
+                    fill="#FED4BD" />
+            </svg>
+
+        </div>
+        <div class="decoration-2">
+            <svg width="105" height="59" viewBox="0 0 105 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M69.0968 25H67.2635C64.7322 25 62.6802 27.0147 62.6802 29.5C62.6802 31.9853 64.7322 34 67.2635 34H69.0968C71.6281 34 73.6802 31.9853 73.6802 29.5C73.6802 27.0147 71.6281 25 69.0968 25Z"
+                    fill="#EF6D63" />
+                <path
+                    d="M53.6061 25H4.39394C1.96723 25 0 27.0147 0 29.5C0 31.9853 1.96723 34 4.39394 34H53.6061C56.0328 34 58 31.9853 58 29.5C58 27.0147 56.0328 25 53.6061 25Z"
+                    fill="#EF6D63" />
+                <path
+                    d="M100.097 50H98.2635C95.7322 50 93.6802 52.0147 93.6802 54.5C93.6802 56.9853 95.7322 59 98.2635 59H100.097C102.628 59 104.68 56.9853 104.68 54.5C104.68 52.0147 102.628 50 100.097 50Z"
+                    fill="#FED4BD" />
+                <path
+                    d="M84.6061 50H35.3939C32.9672 50 31 52.0147 31 54.5C31 56.9853 32.9672 59 35.3939 59H84.6061C87.0328 59 89 56.9853 89 54.5C89 52.0147 87.0328 50 84.6061 50Z"
+                    fill="#FED4BD" />
+                <path
+                    d="M89.0968 0H87.2635C84.7322 0 82.6802 2.01472 82.6802 4.5C82.6802 6.98528 84.7322 9 87.2635 9H89.0968C91.6281 9 93.6802 6.98528 93.6802 4.5C93.6802 2.01472 91.6281 0 89.0968 0Z"
+                    fill="#FED4BD" />
+                <path
+                    d="M73.6061 0H24.3939C21.9672 0 20 2.01472 20 4.5C20 6.98528 21.9672 9 24.3939 9H73.6061C76.0328 9 78 6.98528 78 4.5C78 2.01472 76.0328 0 73.6061 0Z"
+                    fill="#FED4BD" />
+            </svg>
+
         </div>
     </div>
 </section>
