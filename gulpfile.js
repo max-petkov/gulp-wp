@@ -42,6 +42,7 @@ gulp.task("css", function () {
           "li:last-child",
           "sub-menu",
           "fonts-loaded",
+          "splide__pagination",
         ],
       })
     );

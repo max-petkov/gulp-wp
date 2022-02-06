@@ -30,10 +30,31 @@ function heroSlider() {
     autoplay: true,
     rewind: true,
     rewindSpeed: 1000,
+    lazyLoad: "nearby",
   });
   heroSlide.mount();
 }
 
+function testimonialSlider() {
+  const testimonialSlide = new Splide(".testimonial-slider", {
+    arrows: false,
+    gap: "2.4rem",
+    perPage: 3,
+    breakpoints: {
+      1080: {
+        perPage: 2,
+      },
+      650: {
+        perPage: 1,
+      },
+    },
+  });
+  testimonialSlide.mount();
+}
+
 navMenu.addEventListener("click", openMenu(navLinks, navCTA));
 body.addEventListener("click", closeMenu(navLinks, navCTA));
-document.addEventListener("DOMContentLoaded", heroSlider);
+document.addEventListener("DOMContentLoaded", function () {
+  heroSlider();
+  testimonialSlider();
+});

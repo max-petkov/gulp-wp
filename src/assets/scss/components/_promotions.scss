@@ -40,24 +40,24 @@
           }
           @include media-view($tablet) {
             span:first-child {
-              font-size: 10vw;
+              font-size: 7vw;
             }
             span:nth-child(2) {
-              font-size: 10vw;
+              font-size: 7vw;
             }
             span:nth-child(3) {
-              font-size: 8vw;
+              font-size: 6vw;
             }
           }
           @include media-view($mobile) {
             span:first-child {
-              font-size: 16vw;
+              font-size: 11vw;
             }
             span:nth-child(2) {
-              font-size: 16vw;
+              font-size: 11vw;
             }
             span:nth-child(3) {
-              font-size: 12vw;
+              font-size: 8vw;
             }
           }
         }
