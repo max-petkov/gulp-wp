@@ -43,6 +43,7 @@ gulp.task("css", function () {
           "sub-menu",
           "fonts-loaded",
           "splide__pagination",
+          "h4",
         ],
       })
     );

@@ -928,4 +928,42 @@
         </div>
     </div>
 </section>
+<section class="contact-us">
+    <div class="section__title">
+        <p class="body-leading-regular">contacts</p>
+        <h2><span>Any question? Just write us a message!</span></h2>
+    </div>
+    <div class="container contact-us-container">
+        <div class="contact-information">
+            <div class="contact-information__details">
+                <h4>Contact Information</h4>
+                <p class="contact-information__subtitle">Fill up the form and we are going to contact you as soon as
+                    possible.</p>
+                <a href="tel:514 574-5181" class="contact-information__icon">
+                    <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/phone-message.png" alt=""
+                        width="24px">
+                    514 574-5181
+                </a>
+                <a href="mailto:monchoixclimat@gmail.com" class="contact-information__icon">
+                    <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/email.png" alt=""
+                        width="26px">
+                    monchoixclimat@gmail.com
+                </a>
+                <a href="https://goo.gl/maps/89jLWvRaqFKGgzLy6" target="_blank" class="contact-information__icon">
+                    <img src="http://localhost/custom_wordpress/wp-content/uploads/2022/02/pin.png" alt=""
+                        height="27px">
+                    434 Imelda Laval H7P 5V2
+                </a>
+            </div>
+            <div class="contact-information__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11172.63317318647!2d-73.8059596!3d45.5672553!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x722d6ac499a50819!2sMCC%20Climatisation%20Chauffage%20Inc.!5e0!3m2!1sen!2sbg!4v1644172248137!5m2!1sen!2sbg"
+                    width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Form Here</h2>
+        </div>
+    </div>
+</section>
 <?php get_footer(); ?>
