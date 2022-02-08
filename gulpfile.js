@@ -9,6 +9,7 @@ const imagemin = require("gulp-imagemin");
 const uglify = require("gulp-uglify");
 const concat = require("gulp-concat");
 const mergeStream = require("merge-stream");
+const streamqueue = require("streamqueue");
 const browsersync = require("browser-sync").create();
 
 // Creating PHP task
@@ -53,6 +54,8 @@ gulp.task("css", function () {
           "fonts-loaded",
           "splide__pagination",
           "h4",
+          "bar--1-transform",
+          "bar--2-transform",
         ],
       })
     );
@@ -85,15 +88,30 @@ gulp.task("images", function () {
 
 // Creating JS task
 const js = {
+  splide: "src/assets/libs/splidejs/splide.min.js",
+  gsap: "src/assets/libs/gsap/gsap.min.js",
+  gsapScrollTrigger: "src/assets/libs/gsap/ScrollTrigger.min.js",
   src: "src/assets/js/*.js",
   dist: "../custom_wordpress/wp-content/themes/mccclimatisation/assets/js",
-  splide: "src/assets/libs/splidejs/splide.min.js",
 };
 gulp.task("js", function () {
-  const jsMain = gulp.src(js.src);
+  // const jsSplide = gulp.src(js.splide);
+  // const jsGsapScrollTrigger = gulp.src(js.gsapScrollTrigger);
+  // const jsGsap = gulp.src(js.gsap);
+  // const jsMain = gulp.src(js.src);
 
-  const jsSplide = gulp.src(js.splide);
-  return mergeStream(jsMain, jsSplide)
+  // return mergeStream(jsSplide, jsGsap, jsGsapScrollTrigger, jsMain)
+  //   .pipe(concat("main.bundle.js"))
+  //   .pipe(uglify())
+  //   .pipe(gulp.dest(js.dist));
+
+  return streamqueue(
+    { objectMode: true },
+    gulp.src(js.gsap),
+    gulp.src(js.gsapScrollTrigger),
+    gulp.src(js.splide),
+    gulp.src(js.src)
+  )
     .pipe(concat("main.bundle.js"))
     .pipe(uglify())
     .pipe(gulp.dest(js.dist));

@@ -22,9 +22,11 @@
     "gulp-uglify": "^3.0.2",
     "merge-stream": "^2.0.0",
     "postcss": "^8.4.5",
-    "sass": "^1.49.0"
+    "sass": "^1.49.0",
+    "streamqueue": "^1.1.2"
   },
   "dependencies": {
-    "@splidejs/splide": "^3.6.12"
+    "@splidejs/splide": "^3.6.12",
+    "gsap": "^3.9.1"
   }
 }
