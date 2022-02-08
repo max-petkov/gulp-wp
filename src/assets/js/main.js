@@ -4,6 +4,7 @@ const body = document.querySelector("body");
 const navMenu = document.querySelector(".nav__icon-menu");
 const navLinks = document.querySelector(".nav__list");
 const navCTA = document.querySelector(".nav__cta");
+const navIcon = document.querySelector(".nav__icon-menu svg");
 
 function openMenu(ul, cta) {
   return function (e) {

@@ -962,7 +962,8 @@
             </div>
         </div>
         <div class="contact-form">
-            <h2>Form Here</h2>
+            <?php //echo do_shortcode("[contact-form-7 id='182' title='Contact form 1']"); ?>
+            <?php get_template_part( "template-parts/contact-form"); ?>
         </div>
     </div>
 </section>

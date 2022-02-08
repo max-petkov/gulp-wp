@@ -20,6 +20,15 @@ gulp.task("php", function () {
   return gulp.src(php.src).pipe(gulp.dest(php.build));
 });
 
+const phpTemplates = {
+  src: "src/template-parts/*.php",
+  build:
+    "../custom_wordpress/wp-content/themes/mccclimatisation/template-parts",
+};
+gulp.task("template-parts", function () {
+  return gulp.src(phpTemplates.src).pipe(gulp.dest(phpTemplates.build));
+});
+
 // Creating CSS task
 const css = {
   src: "src/assets/scss/main.scss",
@@ -33,7 +42,7 @@ gulp.task("css", function () {
     .pipe(sass())
     .pipe(
       purgecss({
-        content: ["src/*.php"],
+        content: ["src/*.php", "src/template-parts/*.php"],
         safelist: [
           "nav-m-opened",
           "a",
@@ -90,7 +99,10 @@ gulp.task("js", function () {
     .pipe(gulp.dest(js.dist));
 });
 
-gulp.task("build", gulp.series("php", "css", "fonts", "images", "js"));
+gulp.task(
+  "build",
+  gulp.series("php", "template-parts", "css", "fonts", "images", "js")
+);
 
 // Creating Watch task + Browserync
 gulp.task("watch", function () {
@@ -106,6 +118,9 @@ gulp.task("watch", function () {
   });
 
   gulp.watch(php.src, gulp.series("php")).on("change", browsersync.reload);
+  gulp
+    .watch(phpTemplates.src, gulp.series("template-parts"))
+    .on("change", browsersync.reload);
   gulp.watch(images.src, gulp.series("images"));
   gulp.watch(js.src, gulp.series("js"));
   gulp.watch(css.watch, gulp.series("css"));
