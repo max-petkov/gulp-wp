@@ -14,7 +14,7 @@
 
 <body>
     <div>
-        <nav class="nav">
+        <nav class="nav nav--absolute">
             <div class="container">
                 <div class="nav__logo">
                     <img src="<?php echo get_template_directory_uri();?>/assets/images/logo.png"

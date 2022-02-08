@@ -1,9 +1,14 @@
 .nav {
   padding: 2.4rem 4rem;
   padding-top: 2.5rem;
-
-  @include elevation-2;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  transition: 0.3s ease-out;
   background-color: #fff;
+  @include elevation-2;
 
   .container {
     display: flex;

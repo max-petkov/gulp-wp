@@ -1,6 +1,7 @@
 "use strict";
 
 const body = document.querySelector("body");
+const nav = document.querySelector(".nav");
 const navMenu = document.querySelector(".nav__icon-menu");
 const navLinks = document.querySelector(".nav__list");
 const navCTA = document.querySelector(".nav__cta");
@@ -67,5 +68,18 @@ document.addEventListener("DOMContentLoaded", function () {
   testimonialSlider();
 });
 
-console.log(gsap);
-gsap.registerPlugin(ScrollTrigger);
+let prevScrollpos = window.pageYOffset;
+
+window.addEventListener("scroll", function () {
+  let currentScrollPos = window.pageYOffset;
+  let navOffsetHeight = document.querySelector(".nav").offsetHeight;
+
+  if (prevScrollpos > currentScrollPos) {
+    nav.style.top = "0";
+  }
+
+  if (currentScrollPos > prevScrollpos) {
+    nav.style.top = `-${navOffsetHeight}px`;
+  }
+  prevScrollpos = currentScrollPos;
+});

@@ -95,16 +95,6 @@ const js = {
   dist: "../custom_wordpress/wp-content/themes/mccclimatisation/assets/js",
 };
 gulp.task("js", function () {
-  // const jsSplide = gulp.src(js.splide);
-  // const jsGsapScrollTrigger = gulp.src(js.gsapScrollTrigger);
-  // const jsGsap = gulp.src(js.gsap);
-  // const jsMain = gulp.src(js.src);
-
-  // return mergeStream(jsSplide, jsGsap, jsGsapScrollTrigger, jsMain)
-  //   .pipe(concat("main.bundle.js"))
-  //   .pipe(uglify())
-  //   .pipe(gulp.dest(js.dist));
-
   return streamqueue(
     { objectMode: true },
     gulp.src(js.gsap),

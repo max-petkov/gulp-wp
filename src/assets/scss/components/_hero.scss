@@ -1,9 +1,11 @@
 .hero {
+  margin-top: 11.6rem;
   padding: 0 4rem;
   min-height: 77vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
   &-container {
     display: flex;
     column-gap: 8rem;
@@ -58,11 +60,18 @@
     }
   }
 
+  @include media-view(1024.9px) {
+    & {
+      margin-top: 16.6rem;
+    }
+  }
+
   @include media-view($tablet) {
     & {
       min-height: auto;
       padding-top: 4rem;
       padding-bottom: 4rem;
+      margin-top: 9.1rem;
     }
 
     &-container {
